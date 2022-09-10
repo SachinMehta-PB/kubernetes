@@ -12,16 +12,16 @@ spec:
   template:
     metadata:
       labels:
-        app: vprdb
+        app: vprodb
     spec:
       containers:
         - name: vprodb
           image: sachinmehta915vicky/myprojectdb:V1
           args:
-            - "ignore-db-dir=lost+found"
+            - "--ignore-db-dir=lost+found"
           volumeMounts:
             - mountPath: /var/lib/mysql
-              name: vprodb-data
+              name: vpro-db-data
           ports:
             - name: vprodb-port
               containerPort: 3306
