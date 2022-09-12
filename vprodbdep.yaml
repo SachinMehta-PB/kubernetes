@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vprodb
-          image: sachinmehta915vicky/myprojectdb:V1
+          image: sachinmehta915vicky/myprojectdb03:V1
           args:
             - "--ignore-db-dir=lost+found"
           volumeMounts:
